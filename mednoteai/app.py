@@ -5,8 +5,6 @@ import os
 import glob
 
 
-
-
 def chatbot_response(msg):
     if msg is None:
        return ""
