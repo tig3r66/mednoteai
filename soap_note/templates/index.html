@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TH2WH5T8JF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-TH2WH5T8JF');
+  </script>
+
+  <!-- settings -->
+  <meta charset="UTF-8">
+  <title>MedLLM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../static/styles/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="icon" href="/static/images/neurogpt-x-logo.png">
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <section class="msger">
+    <header class="msger-header">
+      <div class="msger-header-title">
+        <strong>MedLLM</strong>
+      </div>
+    </header>
+
+    <main class="msger-chat">
+      <div class="msg left-msg">
+        <div class="msg-img" style="background-image: url(/static/images/neurogpt-x-logo.png)"></div>
+
+        <div class="msg-bubble">
+          <div class="msg-info">
+            <div class="msg-info-name">MedLLM</div>
+            <div class="msg-info-time">12:45</div>
+          </div>
+
+          <div class="msg-text">
+            Hi, welcome to MedLLM! Go ahead and send me a message. 😄
+            <br><br>
+            If you upload an audio file of a medical interaction, MedLLM can generate soap notes, provide differential diagnoses, and more.
+            <br><br>
+            DISCLAIMER: This tool does not provide medical advice. It is intended for informational purposes only. It is not a substitute for professional medical advice, diagnosis or treatment. Replies may take up to a minute to process.
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <form class="msger-inputarea">
+      <textarea type="text" class="msger-input" id="textInput" placeholder="Enter your message..."></textarea>
+      <button type="submit" class="msger-send-btn">Send</button>
+
+      <div class="upload-btn-wrapper">
+        <div>
+          <input type="file" name="file" id="file" accept="audio/mp3,audio/*;capture=microphone" style="display:none;">
+          <label for="file" id="file-label">Upload audio</label>
+        </div>
+        <button type="submit" class="msger-send-btn" id="upload-btn" style="display:none;">Upload</button>
+      </div>
+    </form>
+  </section>
+
+
+  <script type="text/javascript" src="/static/js/controller.js"></script>
+
+</body>
+
+</html>
